@@ -1,0 +1,597 @@
+@font-face {
+    font-family: Frostbite;
+    src: url(POLICES/FROSTBITE-Narrow.ttf);
+    font-family: Philospher;
+    src: url(POLICES/Philosopher-Regular.ttf);
+	font-family: Icons;
+	src: url(POLICES/mfglabsiconset-webfont.ttf);
+}
+
+nav#barreRougeHaut {
+    background-color: red;
+    padding-top: 0.5%;
+    padding-bottom: 0.01%;
+    position: fixed;
+}
+
+nav#barreRougeHaut ul{    
+    display:flex;
+}
+
+nav#barreRougeHaut li {
+    list-style-type: none;
+    background-position-x: center;
+}
+
+nav#barreRougeHaut li#Texte {
+    margin-left:-10%;
+    
+}
+
+nav#barreRougeHaut a{
+    text-decoration:none;
+    color : white;
+}
+
+nav#barreRougeHaut img#logoTwitter{
+    width:10%;
+}
+
+nav#barreRougeHaut img#logoFacebook {
+    width: 10%;
+    margin-left: -85%;
+}
+
+nav#barreRougeHaut img {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* Parite articles */
+
+.block {
+    background-color: white;
+    font-family: Roboto;
+    color: black;
+}
+
+.articles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.contenu {
+    margin: 0 10px 0 10px;
+	list-style: none;
+}
+
+.lien_article {
+    color:black;
+	white-space: normal;
+}
+
+.contenu a:link{
+    color:black;
+    text-decoration: none;
+}
+
+
+#titre {
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.article {
+    display: flex;
+    border: 0.5px solid;
+    border-color: grey;
+    text-align: justify;
+    flex-flow: column wrap;
+    margin: 0 15px 0 15px;
+    width: 20%;
+}
+
+.image_article {
+    width: 100%;
+    background-size: 500px;
+    margin-bottom: 30px;
+}
+
+.titre_article {
+    color: black;
+    font-size: 20px;
+    font-weight:bold;
+    text-align: center;
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+}
+
+.texte_article{
+    margin-top: 10px;
+}
+
+#plus{
+    color:red;
+}
+
+#suite{
+    color: #eaa903;
+    border-color: #eaa903;
+    border-radius: 100px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-family: 'Montserrat',sans-serif!important;
+    font-weight: 700!important;
+    text-transform: uppercase!important;
+    padding: 0.3em 1em;
+    margin-top: 20px;
+    border: 2px solid;
+    display: inline-block;
+    transition: all 300ms ease 0ms;
+    text-decoration:none;
+}
+
+#suite:hover {
+	text-decoration: none;
+}
+
+.libellé {
+	text-align: center;
+	padding: 50px;
+	background-color: transparent;
+}
+
+@media screen and (max-width:900px) {
+	.articles {
+		flex-flow: wrap;
+	}
+    
+    #suite{
+        color: red;
+        border-color: red;
+        border-radius: 3px;
+        padding: 1em 1em;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+}
+
+
+/* Parite navbar */
+
+#navbar {
+    margin-top: 40px;
+    position : fixed;
+    background-color:white;
+    width:100%;
+}
+
+#menu {
+    
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.sous_onglet, #covid {
+    color: darkslategray;
+}
+.sous_onglet:hover, #covid:hover {
+    color: #bbb9b8;
+    text-decoration: none;
+}
+
+#logo_IUT {
+    width: 8%;
+    position: absolute;
+    margin-left:-93%;
+}
+
+#recherche {
+	margin-left: 95%;
+    width : 30px;
+}
+
+#recherche:hover {
+	display: none;
+}
+
+.onglet {
+    list-style-type: none;
+	font-size: 20px;
+    margin-left:4%;
+
+}
+
+.sous_onglet {
+    display: none;
+}
+
+.onglet:hover .sous_onglet {
+    display: list-item;
+    font-size: 12px;
+    border-bottom: 2px solid #EBAE2E;
+}
+
+/*Partie Chiffres*/
+
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+div.BJI {
+    background-color: #EBAE2E;
+}
+
+div#TitreBJI p{
+    color : honeydew;
+    text-align : center;
+    font-size : 40px;
+    padding-top:3%;
+    padding-bottom:50px;
+    
+}
+
+div.TexteBJI{
+    padding-left: 20px;
+    padding-right:20px;
+}
+
+div.contenaire {
+    display: flex;
+    justify-content: space-around;
+}
+
+div#StatBJI {
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+div#StatBJI div.TexteBJI {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#ChiffreBJI{
+    color:honeydew;
+    font-size:60px;
+    font-weight:bold;
+
+}
+
+#PhraseBJI {
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*PARTIE FOOTER*/
+
+#footers-widgets {
+    padding-top: 3%;
+}
+
+#LogoBDP{
+    padding-top: 3%;
+}
+
+h4 {
+    font-size: 19px;
+}
+
+#footer {
+    background-color: #cf0a2c;
+    color: #ffffff;
+    font-family: "Open Sans", "Arial", "sans-serif";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.7em;
+}
+
+#container {
+    width: 80%;
+    max-width: 1080px;
+    margin: auto;
+    position: relative;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+
+
+p {
+    padding-bottom: 1em;
+}
+
+@media screen and (max-width: 900px) {
+
+    div.BJI {
+        background-color: white;
+        font-family: Roboto;
+    }
+
+    div#StatBJI {
+        flex-wrap: wrap;
+    }
+
+    div#TitreBJI p {
+        color: black;
+        font-size: 20px;
+    }
+
+    div#ChiffreBJI {
+        color: black;
+    }
+
+    #footers-widgets {
+        padding-bottom: 9.5%;
+        width: 100%;
+        margin-right: 0;
+        display: block;
+    }
+}
+
+.lien-acces {
+	color: honeydew;
+}
+
+.lien-acces:hover {
+	color: #C0BCC0;
+	text-decoration: none;
+}
+
+ /*CSS DE EYMEN LE GROS BG candidatures  */
+ 
+ 
+
+div.globale{
+	padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: Roboto;
+}
+
+div.Titre_Page p{
+	color: #747d88!important;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 36px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+div.Texte_Page {
+	font-weight: 700;
+    color: #555;
+    line-height: 1.4em;
+    font-size: 22px;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+
+}
+
+.LPE{
+    color: #eaa903;
+    border-color: #eaa903;
+    border-radius: 100px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-family: 'Montserrat',sans-serif!important;
+    font-weight: 700!important;
+    text-transform: uppercase!important;
+    padding: 0.3em 1em;
+    margin-top: 20px;
+    border: 2px solid;
+    display: inline-block;
+    transition: all 300ms ease 0ms;
+    text-decoration:none;
+}
+
+.LPE:hover{
+    text-decoration: none;
+    color:#eaa903;
+}
+
+@media screen and (max-width: 900px) {
+    div.Titre_Page p{
+        font-size:20px;
+    }
+    
+    div.Texte_Page {
+        text-align: left;
+    }
+    
+    .LPE{
+        color: red;
+        border-color: red;
+        border-radius: 3px;
+        padding: 1em 1em;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+}
+
+/*Partie diplômes*/
+div.DIP a:link
+{
+ text-decoration:none;
+}
+
+div.DIP {
+    background-color: #EBAE2E;
+    font-family: Roboto;
+}
+
+div.TitreDIP p{
+    color : white;
+    text-align : center;
+    font-size : 40px;
+    font-family: sans-serif;
+    padding-top:50px;
+    padding-bottom:50px;
+
+}
+
+div.DescrDIP {
+    display: flex;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+
+}
+
+div.DescrDIP div.TexteDIP {
+    width: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 35px;
+}
+
+div#TitreDIP{
+    color:white;
+    font-size:25px;
+    font-family: sans-serif;
+    font-weight:bold;
+
+}
+
+div.DIP h3 {
+  color:white;
+  font-size:16px;
+  font-family: sans-serif;
+  font-weight:lighter;
+}
+	
+div.DIP div.logo{
+    padding-bottom: 30px;
+}
+
+div.DIP div.logo2{
+    display:none;
+}
+
+@media screen and (max-width: 900px) {
+	
+    div.DIP div.logo{
+        display:none;
+    }
+    
+    div.DIP div.logo2{
+        display:block;
+        padding-bottom: 30px;
+    }
+    
+	div.DIP{
+		background-color:white;
+		font-family:roboto;
+        align-content: center;
+	}
+	
+	div.DescrDIP{
+		flex-wrap: wrap;
+	}
+	
+	div.TitreDIP p{
+		color:black;
+	}
+	
+	div#TitreDIP{
+		color:black;
+		font-size:20px;
+	}
+	
+	div.DIP h3{
+		color:black;
+	} 	 	
+	
+	
+}
+
+
+/*Partie rentree*/
+div.rentree {
+    background-color: #EBAE2E;
+    font-family: Roboto;
+    display: flex;
+    padding-left: 10%;
+
+}
+
+div.TitreRentree {
+    color: white;
+    font-family: 'Montserrat',sans-serif;
+    font-size:55px;
+    padding-top: 200px;
+    text-transform: uppercase;
+}
+
+div.rentree a{
+    color: white;
+    border-color: white;
+    border-radius: 100px;
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-family: 'Montserrat',sans-serif!important;
+    font-weight: 700!important;
+    text-transform: uppercase!important;
+    padding: 0.3em 1em;
+    border: 2px solid;
+    display: inline-block;
+    transition: all 300ms ease 0ms;
+    text-decoration:none;
+    margin-bottom: 15px;
+}
+
+div.DescrRentree {
+    padding-left: 5%;
+    margin-right: 10%;
+}
+
+div.texteRentree{
+    font-size:20px;
+    color:#555;
+    font-weight: lighter;
+    
+}
+
+div.rentree img{
+    width:110%;
+    height:100%;
+    padding-top: 40px;
+}
+
+
+@media screen and (max-width: 900px) {
+    
+    div.rentree {
+        background-color: white;   
+    }
+    
+    div.rentree img {
+        display: none;
+    }
+    
+    div.TitreRentree {
+        color:#555;
+        text-transform: none;
+        font-weight: bold;
+    }
+    
+    div.texteRentree{
+        font-size:16px;
+    }
+
+    div.rentree a{
+        color: red;
+        border-color: red;
+        border-radius: 3px;
+        padding: 1em 1em;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+}
